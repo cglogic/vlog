@@ -1,0 +1,9 @@
+!/build
+src/*.user
+src/*.user.*
+build/Makefile
+build/export*/
+build/import*/
+build/plugins/
+build/vlog/
+build/*.log

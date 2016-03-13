@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties>
+ <object name="Project">
+  <prop name="company" caption="Company" type="string" value=""></prop>
+  <prop name="well" caption="Well" type="string" value=""></prop>
+  <prop name="field" caption="Field" type="string" value=""></prop>
+  <prop name="location" caption="Location" type="string" value=""></prop>
+  <prop name="service_company" caption="Service company" type="string" value=""></prop>
+  <prop name="country" caption="Country" type="string" value=""></prop>
+  <prop name="date" caption="Service date" type="date" value="1900-01-01"></prop>
+  <prop name="province" caption="Province" type="string" value=""></prop>
+  <prop name="well_id" caption="Unique well ID" type="string" value=""></prop>
+  <prop name="licence" caption="Licence number" type="string" value=""></prop>
+  <prop name="state" caption="State" type="string" value=""></prop>
+  <prop name="county" caption="County" type="string" value=""></prop>
+  <prop name="api" caption="API number" type="string" value=""></prop>
+  <prop name="latitude" caption="Latitude" type="double" value="0.0" min="-180.0" max="180.0" decimals="2"></prop>
+  <prop name="longitude" caption="Longitude" type="double" value="0.0" min="-180.0" max="180.0" decimals="2"></prop>
+  <prop name="geodetic_datum" caption="Geodetic datum" type="string" value=""></prop>
+  <prop name="x" caption="X (east-west)" type="double" value="0.0" min="-180.0" max="180.0" decimals="2"></prop>
+  <prop name="y" caption="Y (north-south)" type="double" value="0.0" min="-180.0" max="180.0" decimals="2"></prop>
+  <prop name="horizontal_coords" caption="Horiz. co-system" type="string" value=""></prop>
+ </object>
+</properties>

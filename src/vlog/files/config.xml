@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+ <interface>
+  <language>English</language>
+ </interface>
+ <projects>
+  <autosave>0</autosave>
+  <autosavetime>5</autosavetime>
+ </projects>
+ <scene>
+  <scroll_x>15</scroll_x>
+  <scroll_y>15</scroll_y>
+ </scene>
+</config>

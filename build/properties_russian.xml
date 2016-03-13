@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties>
+ <object name="Project">
+  <prop name="project_group" caption="Проект" type="group">
+   <prop name="project_name" caption="Имя" type="string" readonly="1"></prop>
+   <prop name="project_path" caption="Путь" type="string" readonly="1"></prop>
+  </prop>
+ </object>
+ <object name="Log">
+  <prop name="pixmap_group" caption="Изображение" type="group">
+   <prop name="rotate_angle" caption="Угол поворота" type="double" value="0.0" min="-360.0" max="360.0" step="0.01"></prop>
+  </prop>
+  <prop name="wire_group" caption="Сетка" type="group">
+   <prop name="divide" caption="Делитель" type="int" value="1" min="1" max="1000" step="1"></prop>
+  </prop>
+  <prop name="spline_group" caption="Сплайн" type="group">
+   <prop name="spline_type" caption="Тип" type="enum" enumnames="Акима;Катмулл-Ром;Линейный" value="1"></prop>
+  </prop>
+ </object>
+ <object name="Depth">
+  <prop name="range_group" caption="Шкала" type="group">
+   <prop name="start" caption="Начало" type="double" value="0.0" min="0.0" max="100000.0" step="1.0"></prop>
+   <prop name="stop" caption="Конец" type="double" value="100.0" min="0.0" max="100000.0" step="1.0"></prop>
+   <prop name="divide" caption="Делитель" type="int" value="1" min="1" max="100" step="1"></prop>
+  </prop>
+  <prop name="digit_group" caption="Оцифровка" type="group">
+   <prop name="digit_delim" caption="Разделитель" type="enum" enumnames="Запятая;Пробел;Табуляция" value="1"></prop>
+   <prop name="digit_prec" caption="Точность" type="int" value="3" min="0" max="8"></prop>
+   <prop name="digit_start" caption="Начало" type="double" value="0.0" min="0.0" max="100000.0" step="0.01" decimals="3" readonly="1"></prop>
+   <prop name="digit_stop" caption="Конец" type="double" value="100.0" min="0.0" max="100000.0" step="0.01" decimals="3" readonly="1"></prop>
+   <prop name="digit_step" caption="Шаг" type="double" value="0.01" min="0.0" max="100000.0" step="0.01" decimals="3"></prop>
+   <prop name="digit_null" caption="Пустое значение" type="double" value="-999.999" min="-999.999" max="100000.0" step="0.01" decimals="3"></prop>
+  </prop>
+ </object>
+ <object name="Parameter">
+  <prop name="name" caption="Имя" type="string"></prop>
+  <prop name="unit" caption="Единица измерения" type="string"></prop>
+  <prop name="range_group" caption="Шкала" type="group">
+   <prop name="range_divide" caption="Делитель" type="int" value="1" min="1" max="100" step="1"></prop>
+  </prop>
+  <prop name="brush_color" caption="Цвет кисти" type="color"></prop>
+ </object>
+ <object name="Curve">
+  <prop name="spline_group" caption="Сплайн" type="group">
+   <prop name="spline_type" caption="Тип" type="enum" enumnames="Акима;Катмулл-Ром;Линейный" value="1"></prop>
+   <prop name="draw_step" caption="Шаг рисования" type="double" value="1.0" min="0.01" max="10.0" step="0.1"></prop>
+  </prop>
+  <prop name="range_group" caption="Шкала" type="group">
+   <prop name="range_start" caption="Начало" type="double" value="0.0" min="-1000.0" max="1000.0" step="1"></prop>
+   <prop name="range_stop" caption="Конец" type="double" value="100.0" min="-1000.0" max="1000.0" step="1"></prop>
+  </prop>
+  <prop name="painting_group" caption="Рисование" type="group">
+   <prop name="brush_group" caption="Кисть" type="group">
+	<prop name="brush_radius" caption="Радиус" type="double" value="8.0" min="1.0" max="50.0" step="0.1" decimals="1"></prop>
+	<prop name="paint_target" caption="Цель" type="enum" enumnames="Серость;Красный;Зеленый;Синий;Пипетка;Адаптивность" value="0"></prop>
+	<prop name="target_value" caption="Значение цели" type="int" value="80" min="1" max="255" step="1"></prop>
+	<prop name="target_coeff" caption="Коеффициент" type="double" value="2.0" min="0.1" max="20.0" step="0.1" decimals="1" readonly="1"></prop>
+	<prop name="target_color" caption="Цвет" type="color" readonly="1"></prop>
+	<prop name="target_scatter" caption="Рассеивание" type="int" value="5" min="0" max="255" step="1" readonly="1"></prop>
+   </prop>
+   <prop name="line_bias" caption="Отклонение линии" type="double" value="1.0" min="0.01" max="10" step="0.01" decimals="2"></prop>
+   <prop name="point_gap" caption="Зазор точек" type="double" value="6.0" min="0.5" max="50.0" step="0.1" decimals="1"></prop>
+  </prop>
+ </object>
+</properties>

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cp import_image/libimport_image.so plugins/
+cp import_las/libimport_las.so plugins/
+cp export_las2/libexport_las2.so plugins/
+cp export_las3/libexport_las3.so plugins/

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>las3props.xml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties>
+ <object name="Project">
+  <prop name="project_group" caption="Project" type="group">
+   <prop name="project_name" caption="Name" type="string" readonly="1"></prop>
+   <prop name="project_path" caption="Path" type="string" readonly="1"></prop>
+  </prop>
+ </object>
+ <object name="Log">
+  <prop name="pixmap_group" caption="Pixmap" type="group">
+   <prop name="rotate_angle" caption="Rotate angle" type="double" value="0.0" min="-360.0" max="360.0" step="0.01"></prop>
+  </prop>
+  <prop name="wire_group" caption="Wire" type="group">
+   <prop name="divide" caption="Divide" type="int" value="1" min="1" max="1000" step="1"></prop>
+  </prop>
+ </object>
+ <object name="Depth">
+  <prop name="range_group" caption="Range" type="group">
+   <prop name="start" caption="Start" type="double" value="0.0" min="0.0" max="100000.0" step="1.0"></prop>
+   <prop name="stop" caption="Stop" type="double" value="100.0" min="0.0" max="100000.0" step="1.0"></prop>
+   <prop name="divide" caption="Divide" type="int" value="1" min="1" max="100" step="1"></prop>
+  </prop>
+  <prop name="digit_group" caption="Digitization" type="group">
+   <prop name="digit_delim" caption="Delimiter" type="enum" enumnames="Comma;Space;Tab" value="1"></prop>
+   <prop name="digit_prec" caption="Precision" type="int" value="3" min="0" max="8"></prop>
+   <prop name="digit_start" caption="Start" type="double" value="0.0" min="0.0" max="100000.0" step="0.01" decimals="3" readonly="1"></prop>
+   <prop name="digit_stop" caption="Stop" type="double" value="100.0" min="0.0" max="100000.0" step="0.01" decimals="3" readonly="1"></prop>
+   <prop name="digit_step" caption="Step" type="double" value="0.01" min="0.0" max="100000.0" step="0.01" decimals="3"></prop>
+   <prop name="digit_null" caption="Null" type="double" value="-999.999" min="-999.999" max="100000.0" step="0.01" decimals="3"></prop>
+  </prop>
+ </object>
+ <object name="Parameter">
+  <prop name="name" caption="Name" type="string"></prop>
+  <prop name="unit" caption="Unit" type="string"></prop>
+  <prop name="range_group" caption="Range" type="group">
+   <prop name="range_divide" caption="Divide" type="int" value="1" min="1" max="100" step="1"></prop>
+  </prop>
+  <prop name="brush_color" caption="Brush color" type="color"></prop>
+ </object>
+ <object name="Curve">
+  <prop name="spline_group" caption="Spline" type="group">
+   <prop name="spline_type" caption="Type" type="enum" enumnames="Akima;Catmull-Rom;Linear" value="1"></prop>
+   <prop name="draw_step" caption="Draw step" type="double" value="1.0" min="0.01" max="10.0" step="0.1"></prop>
+  </prop>
+  <prop name="range_group" caption="Range" type="group">
+   <prop name="range_start" caption="Start" type="double" value="0.0" min="-1000.0" max="1000.0" step="1"></prop>
+   <prop name="range_stop" caption="Stop" type="double" value="100.0" min="-1000.0" max="1000.0" step="1"></prop>
+  </prop>
+  <prop name="painting_group" caption="Painting" type="group">
+   <prop name="brush_group" caption="Brush" type="group">
+	<prop name="brush_radius" caption="Radius" type="double" value="8.0" min="1.0" max="50.0" step="0.1" decimals="1"></prop>
+	<prop name="paint_target" caption="Target" type="enum" enumnames="Gray;Red component;Green component;Blue component;Pipette;Adaptive" value="0"></prop>
+	<prop name="target_value" caption="Target value" type="int" value="80" min="1" max="255" step="1"></prop>
+	<prop name="target_coeff" caption="Coefficient" type="double" value="2.0" min="0.1" max="20.0" step="0.1" decimals="1" readonly="1"></prop>
+	<prop name="target_color" caption="Color" type="color" readonly="1"></prop>
+	<prop name="target_scatter" caption="Color scatter" type="int" value="5" min="0" max="255" step="1" readonly="1"></prop>
+   </prop>
+   <prop name="line_bias" caption="Line bias" type="double" value="1.0" min="0.01" max="10" step="0.01" decimals="2"></prop>
+   <prop name="point_gap" caption="Point gap" type="double" value="6.0" min="0.5" max="50.0" step="0.1" decimals="1"></prop>
+  </prop>
+ </object>
+</properties>
